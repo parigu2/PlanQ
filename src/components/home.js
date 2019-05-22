@@ -31,10 +31,11 @@ const styles = StyleSheet.create({
     // backgroundColor: '#F5FCFF',
   },
   title: {
-    height: '10%'
+    height: '10%',
+    marginTop: 20,
   },
   mainImg: {
-    height: '65%',
+    height: '63%',
     width: '100%',
     resizeMode: 'cover',
     borderRadius: 20,
