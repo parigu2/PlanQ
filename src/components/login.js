@@ -42,7 +42,7 @@ export default class Login extends Component{
           </View>
         </View>
         <View style={styles.footer}>
-          <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Home')}>
+          <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Main')}>
             <Text style={{fontSize: 25, color: 'white'}}>Log In</Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.button, {backgroundColor: "#B22222"}]} onPress={()=>this.props.navigation.navigate('Home')}>
