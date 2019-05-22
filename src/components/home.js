@@ -13,7 +13,7 @@ export default class Home extends Component {
           <Text style={{fontSize: 35, color: 'white'}}>Plan Q</Text>
           <Text style={{fontSize: 25, color: 'white'}}>Beta Test for trip in 2019</Text>
         </View>
-        <Image style={styles.mainImg} source={require("../../img/seoul.jpg")}/>
+        <Image style={styles.main} source={require("../../img/seoul.jpg")}/>
         <View style={styles.footer}>
           <TouchableOpacity style={styles.button} onPress={()=>navigate('Login')}><Text style={{fontSize: 25, color: 'white'}}>Log In</Text></TouchableOpacity>
           <TouchableOpacity style={[styles.button, {backgroundColor: "#023e73"}]} onPress={()=>navigate('Signup')}><Text style={{fontSize: 25, color: 'white'}}>Sign up</Text></TouchableOpacity>
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     height: '10%',
     marginTop: 20,
   },
-  mainImg: {
+  main: {
     height: '63%',
     width: '100%',
     resizeMode: 'cover',
