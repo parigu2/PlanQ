@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Input, Icon} from 'react-native-elements'
 import {
   StyleSheet,
   View,
@@ -39,12 +40,28 @@ export default class Login extends Component{
               <Text style={{fontSize: 25, color: 'white'}}>Password</Text>
               <TextInput style={styles.input} onChangeText={password=>this.setState({password})} placeholder="password" secureTextEntry={true}/>
             </View>
+          <Input
+            placeholder='INPUT WITH ICON'
+            leftIcon={{ type: 'font-awesome', name: 'chevron-left' }}
+          />
+
+          <Input
+            placeholder='INPUT WITH CUSTOM ICON'
+            leftIcon={
+              <Icon
+                name='user'
+                size={24}
+                color='black'
+              />
+            }
+          />
           </View>
         </View>
         <View style={styles.footer}>
           <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Main')}>
             <Text style={{fontSize: 25, color: 'white'}}>Log In</Text>
           </TouchableOpacity>
+
           <TouchableOpacity style={[styles.button, {backgroundColor: "#B22222"}]} onPress={()=>this.props.navigation.navigate('Home')}>
             <Text style={{fontSize: 25, color: 'white'}}>Cancel</Text>
           </TouchableOpacity>
